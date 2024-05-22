@@ -29,7 +29,7 @@ public class TaskService implements ITaskService {
 
     @Override
     public Ack delete(String id) {
-        return null;
+        return taskRepository.delete(id);
     }
 
     @Override
